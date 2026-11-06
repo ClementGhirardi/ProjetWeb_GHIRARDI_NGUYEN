@@ -16,14 +16,13 @@
 					<a class="link-button" href="./apropos.html">À propos / Contact</a>
 					<a class="link-button" href="./calendrier.html">Matchs</a>
 					<a class="link-button" href="./pronostics.html">Pronostics</a>
-					<a class="link-button" href="./historique.html">Équipes &amp; joueurs</a>
 				</nav>
 				<div class="badge" aria-label="Badge"></div>
 			</header>
 
 			<div class="hero">
 				<div>
-					<div class="label">Accueil - Sur-titre</div>
+					<h1 class="label">Accueil - Sur-titre</h1>
 					<div class="title large"></div>
 					<div class="line mid"></div>
 					<div class="line short"></div>
@@ -41,7 +40,7 @@
 			<section>
 				<div class="section-head">
 					<div>
-						<div class="label">01 - Programme</div>
+						<h2 class="label">01 - Programme</h2>
 						<div class="heading"></div>
 					</div>
 					<div class="link"></div>
@@ -103,7 +102,7 @@
 
 			<section>
 				<div class="section-head"><div>
-					<div class="label">02 - Top équipes</div>
+					<h2 class="label">02 - Top équipes</h2>
 					<div class="heading"></div>
 				</div>
 				<div class="link"></div>
@@ -137,7 +136,7 @@
 			</section>
 
 			<section class="panel">
-				<div class="label">03 - Pronostics / mise en avant</div>
+				<h2 class="label">03 - Pronostics / mise en avant</h1>
 				<div class="layout-sidebar">
 					<div>
 						<div class="heading"></div>
@@ -146,7 +145,7 @@
 						<div class="button"></div>
 					</div>
 					<div class="panel">
-						<div class="label">Aperçu interactif</div>
+						<h3 class="label">Aperçu interactif</h3>
 						<div class="score">
 							<div class="avatar"></div>
 							<span>VS</span>
@@ -159,7 +158,7 @@
 			<section>
 				<div class="section-head">
 					<div>
-						<div class="label">04 - Étapes</div>
+						<h2 class="label">04 - Étapes</h2>
 						<div class="heading"></div>
 					</div>
 				</div>
@@ -192,12 +191,12 @@
 						<div class="line mid"></div>
 					</div>
 					<div>
-						<div class="label">Navigation</div>
+						<h3 class="label">Navigation</h3>
 						<div class="line"></div>
 						<div class="line short"></div>
 					</div>
 					<div>
-						<div class="label">Liens</div>
+						<h3 class="label">Liens</h3>
 						<div class="line"></div>
 						<div class="line short"></div>
 					</div>
@@ -207,16 +206,5 @@
 				</div>
 			</footer>
 		</div>
-
-		<script>
-		const buttons = document.querySelectorAll("[data-page]");
-		const pages = document.querySelectorAll(".page");
-		buttons.forEach(button => button.addEventListener("click", () => {
-			buttons.forEach(item => item.classList.toggle("active", item === button));
-			pages.forEach(page => page.classList.toggle("active", page.id === button.dataset.page));
-			window.scrollTo({ top: 0, behavior: "smooth" });
-		}));
-		</script>
-
 	</body>
 </html>

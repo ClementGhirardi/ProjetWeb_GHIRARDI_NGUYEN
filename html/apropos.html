@@ -1,104 +1,95 @@
 <!DOCTYPE html>
-<!-- saved from url=(0052)file:///home/clement-ghirardi/Downloads/preview.html -->
 <html lang="fr">
-  <head>
-    <title>A propos</title>
-    <meta charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
-  </head>
-  <body>
-    <div class="shell">
-      <header class="topbar">
-        <div class="logo" aria-label="Logo"></div>
-        <nav class="nav" aria-label="Pages">
-          <button class="" data-page="home">Accueil</button>
-          <button data-page="about" class="active">À propos / Contact</button>
-          <button data-page="matches">Matchs</button>
-          <button data-page="predictions">Pronostics</button>
-          <button data-page="directory">Équipes &amp; joueurs</button>
-        </nav>
-        <div class="badge" aria-label="Badge"></div>
-      </header>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+		<title>À propos</title>
+	</head>
 
-      <!-- PAGE 2 : À PROPOS / CONTACT -->
-      <main class="page active" id="about">
-        <div class="hero compact">
-          <div class="label">À propos - Sur-titre</div>
-          <div class="title large"></div>
-          <div class="line mid"></div>
-        </div>
-        <section>
-          <div class="section-head">
-            <div><div class="label">01 - Présentation</div>
-            <div class="heading"></div>
-            </div>
-          </div>
-          <div class="layout-sidebar">
-            <div class="panel">
-              <div class="line"></div>
-              <div class="line mid"></div>
-              <div class="line"></div>
-              <div class="line short"></div>
-            </div>
-            <div class="image">Visuel d’ambiance</div>
-          </div>
-        </section>
-        <section>
-          <div class="section-head">
-            <div>
-              <div class="label">02 - Contact</div>
-              <div class="heading"></div>
-            </div>
-          </div>
-          <div class="layout-sidebar">
-            <div>
-              <div class="line mid"></div>
-              <div class="line short"></div>
-              <div class="line"></div>
-            </div>
-            <div class="panel">
-              <div class="label">Formulaire</div>
-              <div class="formfield"></div>
-              <div class="formfield"></div>
-              <div class="formfield"></div>
-              <div class="formfield textarea"></div>
-              <div class="line mid"></div>
-              <div class="button"></div>
-            </div>
-          </div>
-        </section>
-      </main>
+	<body>
+		<div class="shell">
+			<header class="topbar">
+				<div class="logo" aria-label="Logo"></div>
+				<nav class="nav" aria-label="Pages">
+					<a class="link-button" href="./accueil.html">Accueil</a>
+					<a class="link-button active" href="./apropos.html">À propos / Contact</a>
+					<a class="link-button" href="./calendrier.html">Matchs</a>
+					<a class="link-button" href="./pronostics.html">Pronostics</a>
+				</nav>
+				<div class="badge" aria-label="Badge"></div>
+			</header>
 
-      <footer class="footer">
-        <div class="footer-grid">
-          <div><div class="logo"></div>
-          <div class="line mid"></div>
-        </div>
-          <div>
-            <div class="label">Navigation</div>
-            <div class="line"></div>
-            <div class="line short"></div>
-          </div>
-          <div>
-            <div class="label">Liens</div>
-            <div class="line"></div>
-            <div class="line short"></div>
-          </div>
-        </div>
-        <div class="footer-end"><div class="line"></div></div>
-      </footer>
-    </div>
+			<main class="page active" id="about">
+				<div class="hero compact">
+					<div class="label">À propos - Sur-titre</div>
+					<div class="title large"></div>
+					<div class="line mid"></div>
+				</div>
+				<section>
+					<div class="section-head">
+						<div>
+							<div class="label">01 - Présentation</div>
+							<div class="heading"></div>
+						</div>
+					</div>
+					<div class="layout-sidebar">
+						<div class="panel">
+							<div class="line"></div>
+							<div class="line mid"></div>
+							<div class="line"></div>
+							<div class="line short"></div>
+						</div>
+						<div class="image">Visuel d’ambiance</div>
+					</div>
+				</section>
+				<section>
+					<div class="section-head">
+						<div>
+							<div class="label">02 - Contact</div>
+							<div class="heading"></div>
+						</div>
+					</div>
+					<div class="layout-sidebar">
+						<div>
+							<div class="line mid"></div>
+							<div class="line short"></div>
+							<div class="line"></div>
+						</div>
+						<div class="panel">
+							<div class="label">Formulaire</div>
+							<div class="formfield"></div>
+							<div class="formfield"></div>
+							<div class="formfield"></div>
+							<div class="formfield textarea"></div>
+							<div class="line mid"></div>
+							<div class="button"></div>
+						</div>
+					</div>
+				</section>
+			</main>
 
-    <script>
-      const buttons = document.querySelectorAll("[data-page]");
-      const pages = document.querySelectorAll(".page");
-      buttons.forEach(button => button.addEventListener("click", () => {
-        buttons.forEach(item => item.classList.toggle("active", item === button));
-        pages.forEach(page => page.classList.toggle("active", page.id === button.dataset.page));
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }));
-    </script>
-
-  </body>
+			<footer class="footer">
+				<div class="footer-grid">
+					<div>
+						<div class="logo"></div>
+						<div class="line mid"></div>
+					</div>
+					<div>
+						<h3 class="label">Navigation</h3>
+						<div class="line"></div>
+						<div class="line short"></div>
+					</div>
+					<div>
+						<h3 class="label">Liens</h3>
+						<div class="line"></div>
+						<div class="line short"></div>
+					</div>
+				</div>
+				<div class="footer-end">
+					<div class="line"></div>
+				</div>
+			</footer>
+    	</div>
+  	</body>
 </html>
